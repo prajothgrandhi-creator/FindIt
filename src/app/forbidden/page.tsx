@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowLeft, ShieldX } from "lucide-react";
+import { Button, Card, PageHeader } from "@/components/ui";
+export default function ForbiddenPage() { return <main className="shell grid min-h-screen max-w-3xl place-items-center py-14"><div className="w-full"><PageHeader eyebrow="ACCESS RESTRICTED" first="This space isn’t" second="available to you." description="Some FindIt areas are reserved for verified campus members or administrators." /><Card className="flex items-center justify-between gap-5 p-5"><div className="flex items-center gap-3 text-sm text-[#b7aebf]"><ShieldX size={19} className="shrink-0 text-[#f87171]" />If you think you should have access, ask your campus administrator.</div><Link href="/"><Button variant="secondary"><ArrowLeft size={15} /> Home</Button></Link></Card></div></main>; }
